@@ -14,6 +14,11 @@ app.get('/canal/youtube', function(req, res) {
     res.send("ola ao canal do youtube") //enviando a resposta os codigos abaixo não serão lidos
 })
 
+app.get('/ola/:nome/:empresa', function(req, res) {
+    res.send(`oi ${req.params.nome} da empresa ${req.params.empresa}`) //enviando a resposta os codigos abaixo não serão lidos
+})
+
+
 
 
 app.listen(4000, function(erro) {
@@ -23,7 +28,3 @@ app.listen(4000, function(erro) {
         console.log('servidor inicial com sucesso')
     }
 })
-
-
-//npm install nodemon -g
-// executar nodemon

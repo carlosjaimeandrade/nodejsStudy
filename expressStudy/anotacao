@@ -6,3 +6,5 @@ npm init - iniciar o projeto em npm, fica mais facil instalar biblioteca
 instalar o express
 npm install express --save   - o save é para savar no packege
 
+//npm install nodemon -g
+// executar nodemon index.js
