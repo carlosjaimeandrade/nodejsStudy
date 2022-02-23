@@ -22,7 +22,9 @@ app.get('/ola/:nome/:empresa', function(req, res) {
 })
 
 app.get('/loja', function(req, res) {
-    res.send(`Os dados do parametros são ${req.query.id}`)
+
+    id = req.query.id ? req.query.id : "";
+    res.send(`Os dados do parametros são ${id}`)
 })
 
 app.listen(4000, function(erro) {
